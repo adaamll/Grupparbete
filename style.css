@@ -218,12 +218,13 @@ img {
 }
 
 .card-text {
+  color: rgba(0, 0, 0, 0.4);
   padding: 0 2rem 3rem 2rem;
 }
 
 .card-img-container {
-  width: 236px;
-  height: 150px;
+  width: 23.6rem;
+  height: 15rem;
   margin: 0 auto;
   margin-top: -2rem;
   border-radius: 6px;
@@ -237,7 +238,7 @@ img {
   background-color: #c7ddea;
   background-image: url(img/child.png);
   background-repeat: no-repeat;
-  background-position: center 2.5rem;
+  background-position: bottom;
 }
 
 .adult {
@@ -274,6 +275,7 @@ img {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 340px 340px;
+  background-color: #fff;
 }
 
 .how-title {
@@ -297,6 +299,7 @@ img {
   flex-direction: column;
   text-align: center;
   padding: 3rem;
+  grid-column: span 2;
 }
 
 .how-box-1 {
@@ -307,25 +310,13 @@ img {
   justify-content: center;
   align-items: center;
 }
-.how-box-2 {
-  grid-column: 3 / span 2;
-  background-color: #fff;
-}
+
 .how-box-3 {
-  grid-column: 5 / span 2;
   background-color: #ebebeb;
 }
-.how-box-4 {
-  grid-column: 1 / span 2;
-  background-color: #fff;
-}
+
 .how-box-5 {
-  grid-column: 3 / span 2;
   background-color: #f17949;
-}
-.how-box-6 {
-  grid-column: 5 / span 2;
-  background-color: #fff;
 }
 
 /* Footer section */
