@@ -88,6 +88,7 @@ img {
 }
 
 .nav-list {
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   list-style: none;
