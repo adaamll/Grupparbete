@@ -402,6 +402,7 @@ textarea {
   padding: 1rem;
   font-family: inherit;
   border: 0;
+  border-radius: 2px;
 }
 
 textarea {
