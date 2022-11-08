@@ -250,7 +250,8 @@ img {
 .card-old {
   background-color: #f17949;
   background-image: url(img/old.png);
-  background-position: bottom;
+  background-repeat: no-repeat;
+  background-position: center bottom -3rem;
 }
 
 /* About us section */
