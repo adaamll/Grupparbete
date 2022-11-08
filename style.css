@@ -82,7 +82,6 @@ img {
 
 .navigation {
   padding: 3rem;
-  background-color: #fff;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -234,21 +233,21 @@ img {
   max-width: 100px;
 }
 
-.child {
+.card-child {
   background-color: #c7ddea;
   background-image: url(img/child.png);
   background-repeat: no-repeat;
   background-position: bottom;
 }
 
-.adult {
+.card-adult {
   background-color: #fab131;
   background-image: url(img/adult.png);
   background-repeat: no-repeat;
   background-position: bottom;
 }
 
-.old {
+.card-old {
   background-color: #f17949;
   background-image: url(img/old.png);
   background-position: bottom;
@@ -291,9 +290,10 @@ img {
   margin-top: 0;
 }
 
-.how-text {
+.how-box-text {
   margin-top: 5rem;
 }
+
 .box {
   display: flex;
   flex-direction: column;
