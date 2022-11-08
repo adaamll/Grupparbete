@@ -9,6 +9,7 @@ body {
   height: 100vh;
   font-family: 'Fira Sans', sans-serif;
   color: rgba(0, 0, 0, 0.6);
+  background-color: #e5e5e5;
 }
 
 /* Typography */
@@ -80,21 +81,38 @@ img {
 /* NAV  */
 
 .navigation {
-  margin: 7em 0;
+  padding: 3rem;
+  background-color: #fff;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .nav-list {
-  display: flex;
-  justify-content: space-evenly;
-  max-width: 1000px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   list-style: none;
+  text-align: center;
 }
 
-.nav-item a {
+.nav-item:nth-child(1) {
+  grid-column: 2;
+}
+
+.nav-item-link {
   text-decoration: none;
   font-size: 1.4rem;
+  color: #8d8d8d;
+}
+
+.nav-item-link:hover,
+.nav-item-link:focus {
   color: #000;
+  font-weight: 900;
+}
+
+.active {
+  color: #000;
+  font-weight: 900;
 }
 
 .header-text {
@@ -113,8 +131,14 @@ img {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 700;
-  padding: 1em 4em;
+  padding: 1rem 4rem;
   box-shadow: rgba(26, 25, 25, 0.35) 0px 1px 1px;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #fad595;
+  color: #777574;
 }
 
 .btn-header {
@@ -137,6 +161,8 @@ img {
   margin: 0 auto;
   max-width: 1000px;
 }
+
+/* Main section */
 
 .main-content {
   max-width: 1000px;
@@ -165,6 +191,8 @@ img {
   width: 280px;
   line-height: 1.6;
 }
+
+/* Cards section */
 
 .cards {
   display: flex;
@@ -196,7 +224,7 @@ img {
   width: 236px;
   height: 150px;
   margin: 0 auto;
-  margin-top: -1rem;
+  margin-top: -2rem;
   border-radius: 6px;
 }
 
@@ -223,6 +251,8 @@ img {
   background-image: url(img/old.png);
   background-position: bottom;
 }
+
+/* About us section */
 
 .about-us {
   text-align: center;
@@ -278,6 +308,7 @@ img {
 }
 .how-box-2 {
   grid-column: 3 / span 2;
+  background-color: #fff;
 }
 .how-box-3 {
   grid-column: 5 / span 2;
@@ -285,6 +316,7 @@ img {
 }
 .how-box-4 {
   grid-column: 1 / span 2;
+  background-color: #fff;
 }
 .how-box-5 {
   grid-column: 3 / span 2;
@@ -292,24 +324,130 @@ img {
 }
 .how-box-6 {
   grid-column: 5 / span 2;
+  background-color: #fff;
+}
+
+/* Footer section */
+
+.footer {
+  height: 340px;
+  width: 1000px;
+  background-color: #777574;
+  margin: 0 auto;
 }
 
 .go-up {
   background-color: #a9a19e;
   width: 1000px;
   margin: 0 auto;
-  padding: 2rem;
+  padding-bottom: 2rem;
 }
 
-.go-top {
+.go-up-link {
   font-size: 1.6rem;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.7);
 }
 
-footer {
-  height: 340px;
-  width: 1000px;
-  background-color: #777574;
+.icon-chevron {
+  margin-top: 0;
+}
+
+/* Contact section */
+
+.header-contact {
+  background-color: #c7ddea;
+  background-image: url(img/man-and-child.png);
+  background-size: auto 280px;
+  background-repeat: no-repeat;
+  background-position: bottom 0 right 8rem;
+  grid-column: 1 / -1;
+  grid-row: 1 / span 2;
+  padding: 6rem 10rem;
+}
+
+.contact-title {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.container-contact {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 170px 170px;
   margin: 0 auto;
+  max-width: 1000px;
+}
+
+/* Form section */
+
+.form {
+  background-color: #a9a19e;
+  margin: 0 auto;
+  max-width: 1000px;
+  min-height: 544px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+}
+
+label {
+  font-weight: 700;
+  margin-top: 3rem;
+}
+
+input,
+textarea {
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  font-family: inherit;
+  border: 0;
+}
+
+textarea {
+  resize: none;
+  height: 166px;
+}
+
+.btn-form {
+  margin-top: 3rem;
+  align-self: flex-end;
+}
+
+.form-cta {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  margin-bottom: 6rem;
+  padding-top: 8rem;
+}
+
+/* Map section */
+
+.map {
+  position: relative;
+  min-height: 400px;
+  background-image: url(img/map-contact.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.address {
+  background-color: #fab131;
+  max-width: 325px;
+  color: #fff;
+  padding: 2rem 2rem 6rem 2rem;
+  position: absolute;
+  top: 4rem;
+  left: 8.5rem;
+}
+
+.map-title {
+  margin: 0;
 }
