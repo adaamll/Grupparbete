@@ -84,6 +84,7 @@ img {
   padding: 3rem;
   max-width: 1000px;
   margin: 0 auto;
+  background-color: #fff;
 }
 
 .nav-list {
@@ -206,7 +207,6 @@ img {
   background-color: #fff;
   border-radius: 6px;
   text-align: center;
-  font-size: 1.1rem;
 }
 
 .card-title {
@@ -219,6 +219,8 @@ img {
 .card-text {
   color: rgba(0, 0, 0, 0.4);
   padding: 0 2rem 3rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
 .card-img-container {
